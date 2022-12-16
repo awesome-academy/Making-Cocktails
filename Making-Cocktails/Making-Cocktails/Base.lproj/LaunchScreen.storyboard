@@ -15,8 +15,34 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="fHe-aY-bWL">
+                                <rect key="frame" x="71.666666666666686" y="357.66666666666669" width="250" height="161.66666666666669"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appicon2" translatesAutoresizingMaskIntoConstraints="NO" id="CHq-Bu-GmF">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="130" id="VoC-px-BYj"/>
+                                            <constraint firstAttribute="width" constant="250" id="Ynm-eJ-QHS"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2W6-66-euM">
+                                        <rect key="frame" x="53" y="137" width="143.66666666666666" height="24.666666666666657"/>
+                                        <string key="text">Making-Cocktails
+</string>
+                                        <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fHe-aY-bWL" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ifw-m5-GQW"/>
+                            <constraint firstItem="fHe-aY-bWL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nFn-d0-JQA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -25,6 +51,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="appicon2" width="400" height="400"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
